@@ -1,4 +1,5 @@
-﻿using DataAccess.Abstract;
+﻿using Core.DataAccess.EntitiyFramework;
+using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
 using System;
@@ -8,7 +9,7 @@ using System.Text;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfRentalDal : IRentalDal
+    public class EfRentalDal : EfEntityRepositoryBase<Rental, CarProjectContext>,IRentalDal
     {
         public void Add(Rental entity)
         {

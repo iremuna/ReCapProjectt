@@ -41,5 +41,14 @@ namespace Business.Constans
 
         public static string RentalFailed = "Kiralama işlemi gerçekleştirilemedi!";
         public static string DeliverAdd = "Araba teslim edildi.";
+
+        public static string TakeImagePath  = "Resim ekleyiniz";
+        public static string NoCarImages = "Araç resmi bulunamadı.";
+        public static string CarImageLimitExceded = "Daha fazla resim yükleyemezsiniz";
+
+        public static string ListSuccess = "Listeleme işlemi başarıyla tamamlandı.";
+        public static string DeleteSuccess = "Silme işlemi başarıyla tamamlandı.";
+        public static string AddSuccess = "Ekleme işlemi başarıyla tamamlandı.";
+       
     }
 }
