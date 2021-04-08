@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Entities.Concrete;
+using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Business.Constans
@@ -39,6 +41,11 @@ namespace Business.Constans
         public static string RentalListed = "Kiralama Listelendi!";
         public static string RentalDetail = "Kiralama detayları :";
 
+        public static string CategoryListed = "Kategori listelendi.";
+        public static string CategoryDeleted = "Kategori silindi.";
+        public static string CategoryUpdated = "Kategori güncellendi.";
+        public static string CategoryAdded = "Kategori listelendi.";
+
         public static string RentalFailed = "Kiralama işlemi gerçekleştirilemedi!";
         public static string DeliverAdd = "Araba teslim edildi.";
 
@@ -49,6 +56,15 @@ namespace Business.Constans
         public static string ListSuccess = "Listeleme işlemi başarıyla tamamlandı.";
         public static string DeleteSuccess = "Silme işlemi başarıyla tamamlandı.";
         public static string AddSuccess = "Ekleme işlemi başarıyla tamamlandı.";
+        public static string AuthorizationDenied = "Kimlik doğrulamaa reddedildi.";
+        public static string UpdateSuccess = "Güncelleme başarılı.";
+        public static string AccessTokenCreated = "Erişim sağlandı.";
+        public static string UserRegistered = "Kullanıcı kayıtlı.";
+        public static string UserNotFound = "Kullanıcı bulunamadı.";
+        public static string SuccessfulLogin = "Giriş başarılı.";
+        public static string PasswordError = "Yanlış parola.";
+        public static string UserAlreadyExists = "Kullanıcı mevcut.";
        
+      
     }
 }

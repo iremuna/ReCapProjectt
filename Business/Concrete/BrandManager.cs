@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.Constans;
 using Core.Utilities;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -11,6 +12,8 @@ namespace Business.Concrete
     public class BrandManager : IBrandService
     {
         IBrandDal _brandDal;
+        private object Messsages;
+
         public BrandManager(IBrandDal _brandDal)
         {
             _brandDal = _brandDal;
@@ -24,7 +27,7 @@ namespace Business.Concrete
         public IResult Delete(Brand brand)
         {
             _brandDal.Delete(brand);
-            return new SuccessResult(Messages.Deleted);
+            return new SuccessResult(Messages.BrandDeleted);
         }
 
         public IDataResult<List<Brand>> GetAll()
@@ -35,7 +38,7 @@ namespace Business.Concrete
         public IResult UpDate(Brand brand)
         {
             _brandDal.Update(brand);
-            return new SuccessResult(Messages.Updated);
+            return new SuccessResult(Messages.BrandUpdated);
         }
     }
 }

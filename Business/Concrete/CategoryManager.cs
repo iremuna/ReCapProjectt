@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.Constans;
 using Core.Utilities;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -24,7 +25,7 @@ namespace Business.Concrete
         public IResult Delete(Category category)
         {
             _categoryDal.Delete(category);
-            return new SuccessRessult(Messages.CategoryDeleted);
+            return new SuccessResult(Messages.CategoryDeleted);
         }
 
         public IDataResult<List<Category>> GetAll()
